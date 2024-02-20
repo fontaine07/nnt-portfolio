@@ -78,3 +78,7 @@
     width: 15rem;
     height: auto;
 }
+
+.animate__animated.animate__fadeInUpBig{
+    --animate-duration: 1.2s;
+}

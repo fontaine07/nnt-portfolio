@@ -1,6 +1,8 @@
 import React from 'react'
 import "./Activity.css"
 import lightbulb from "../../assets/images/lightbulb.png"
+import 'animate.css';
+import TrackVisibility from 'react-on-screen';
 
 const Activity = () => {
     return (
@@ -18,9 +20,15 @@ const Activity = () => {
                             <li className='activity-item'>Storyboard</li>
                         </ul>
                     </div>
-                    <div className='part-box'>
-                        <img src={lightbulb} className="lightbulb" alt=''/>
-                    </div>
+                    <TrackVisibility>
+                        {({ isVisible }) =>
+                            <div className={isVisible ? "animate__animated animate__fadeInUpBig" : ""}>
+                                <div className='part-box'>
+                                    <img src={lightbulb} className="lightbulb" alt='' />
+                                </div>
+                            </div>
+                        }
+                    </TrackVisibility>
                     <div className='part-box'>
                         <h3>Part Coder</h3>
                         <ul>
