@@ -1,13 +1,10 @@
 {
-  "name": "tnn-portfolio",
+  "name": "nnt-portfolio",
   "version": "0.1.0",
-  "hompage": "https://fontaine07.github.io/tnn-portfolio",
+  "hompage": "https://fontaine07.github.io/nnt-portfolio",
   "private": true,
   "dependencies": {
     "@ant-design/icons": "^5.3.0",
-    "@testing-library/jest-dom": "^5.17.0",
-    "@testing-library/react": "^13.4.0",
-    "@testing-library/user-event": "^13.5.0",
     "animate.css": "^4.1.1",
     "antd": "^5.14.1",
     "bootstrap": "^5.3.3",
@@ -18,8 +15,7 @@
     "react-on-screen": "^2.1.1",
     "react-router-dom": "^6.22.1",
     "react-scripts": "5.0.1",
-    "react-scrollchor": "^7.0.2",
-    "web-vitals": "^2.1.4"
+    "react-scrollchor": "^7.0.2"
   },
   "scripts": {
     "start": "react-scripts start",
