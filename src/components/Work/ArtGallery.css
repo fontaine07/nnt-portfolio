@@ -1,0 +1,92 @@
+button {
+    border: none;
+    background-color: transparent;
+  }
+  
+  /* Image gallery styles */
+  
+  body {
+    font-family: "IBM Plex Mono", monospace;
+    padding: 20px;
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 10px;
+  }
+  
+  .gallery-item {
+    overflow: hidden;    
+  }
+  
+  .gallery-image {
+    border-radius: 2px;
+    width: 100%;
+    object-fit: cover;
+    background-size: auto;                    
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 300px;
+    -webkit-transform: scale(1);
+      transform: scale(1);
+      -webkit-transition: .3s ease-in-out;
+      transition: .3s ease-in-out;
+    cursor: pointer;
+  }
+  
+  .gallery-item:hover {
+    opacity: 0.8;
+  }
+  
+  .gallery-item:hover .gallery__image {
+    transform: scale(1.3);
+  }
+  
+  /* Lightbox styles */
+  .lightbox {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 31;
+  }
+  
+  .lightbox-image {
+    max-width: 90%;
+    max-height: 90%;
+  }
+  
+  /* Close lightbox */
+  
+  .lightbox-close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: #fff;
+    font-size: 30px;
+    cursor: pointer;
+  }
+  
+  .lightbox-close-button:hover {
+    opacity: 0.5;
+  }
+  
+  .lightbox-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: -1;
+    cursor: pointer;
+  }

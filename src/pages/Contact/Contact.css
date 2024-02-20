@@ -1,0 +1,120 @@
+.contact-section{
+    margin-top: 30px;
+    padding: 0 50px;
+    height: 100%;
+}
+
+.contact-header {
+    text-align: center;
+    color: #EA37A3;
+    padding: 1rem;
+    position: relative;
+    text-transform: uppercase;
+}
+
+.contact-header::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 4px;
+    background: linear-gradient(90deg, #EA37A3 0%, #7e61e7 100%);
+    border-radius: 2px;
+}
+
+.contact-container {
+    margin-top: 25px;
+    display: flex;
+    flex-direction: row;  
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 20px 8rem;
+    padding: 1rem 80px;
+    font-size: 1.2rem;
+}
+
+.contact-content{
+    max-width: 1300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.7rem 0;
+    gap: 10rem;
+    margin: 0 auto;
+}
+
+.contact-box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px 0px;
+}
+
+.contact-box p{
+    display: inline;
+    vertical-align: middle;
+    margin-bottom: -1px;
+}
+
+.contact-icons {
+    width: 60px;
+    z-index: 2;
+}
+
+.contact-img {
+    width: 90px;
+    height: 90px;
+    position: relative;
+    border-radius: 45px;
+    background: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    transition: .5s;
+}
+
+.laptop{
+    width: 30rem;
+    height: auto;
+}
+
+.contact-container::after, .contact-container::before{
+    content: '';
+    width: 29rem;
+    height: 29rem;
+    border-radius: 29rem;
+    background-color: #7c66e3;
+    position: absolute;
+    z-index: -1;
+    filter: blur(225px);
+}
+
+.contact-container::after{
+    top: -3rem;
+    left: -5rem;
+}
+
+.contact-container::before{
+    bottom: 2rem;
+    right: 0rem;
+}
+
+@media (max-width: 900px){
+    .contact-container{
+        gap: 0px;
+    }
+}
+
+@media (max-width: 775px){
+    .laptop{
+        width: 25rem;
+        height: auto;
+    }
+    .contact-box p{
+        font-size: 16px;
+    }
+}

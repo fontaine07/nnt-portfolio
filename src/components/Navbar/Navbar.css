@@ -1,0 +1,130 @@
+.nav-wrapper{
+    background: rgba(0, 0, 0, 0.1);
+    padding: 0.5rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 30;
+    backdrop-filter: blur(25px);
+}
+
+.nav-content{
+    max-width: 1300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.7rem 0;
+    margin: 0 auto;
+}
+
+.logo{
+    width: 4rem;
+    height: auto;
+}
+
+.nav-content ul{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    list-style: none;
+}
+
+.nav-content li{
+    margin: 0 1.5rem;
+}
+
+.nav-item{
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #fff;
+    position: relative;
+    cursor: pointer;
+}
+
+.nav-item:active{
+    color: #EA37A3;
+    font-weight: 500;
+}
+
+.nav-item::before{
+    content: "";
+    width: 2rem;
+    height: 0.2rem;
+    background: linear-gradient(90deg, #EA37A3 0%, #7e61e7 100%);
+    border-radius: 0.5rem;
+    position: absolute;
+    bottom: -0.6rem;
+    opacity: 0;
+    transform: translateX(-1.5rem);
+    transition: all 0.3s ease;
+}
+
+.nav-item:hover::before{
+    width: 100%;
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.cta-btn{
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    background: linear-gradient(90deg, #EA37A3 0%, #7e61e7 100%);
+    padding: 0.6rem 2rem;
+    border: none;
+    border-radius: 0.2rem;    
+    outline: 1.2px solid transparent;
+    cursor: pointer;
+    transition: all 0.3 ease;
+}
+
+.cta-btn:hover{
+    color: #EA37A3!important;
+    background: #000!important;
+    outline: 1.2px solid #EA37A3;
+}
+
+.menu-btn{
+    width: 2.5rem;
+    height: 2.5rem;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 0.4rem;
+    color: #fff;
+    background: linear-gradient(90deg, #EA37A3 -0.13%, #7e61e7 99.87%);
+    cursor: pointer;
+    transition: all 0.4s ease;
+    display: none;
+}
+
+.menu-btn:hover{
+    color: #EA37A3;
+    background: #000;
+    border: 1px solid #EA37A3;
+}
+@media (max-width: 425px){
+    .logo{
+        width: 3rem;
+        height: auto;
+    }
+}
+
+@media (max-width: 769px){
+    .menu-btn{
+        display: flex;
+    }
+    .nav-content ul{
+        display: none;
+    }
+}
+
+@media (max-width: 1325px){
+    .nav-wrapper{
+        padding: 0 2rem;
+    }
+}
