@@ -1,4 +1,4 @@
-import {React, useState} from 'react'
+import { React, useState } from 'react'
 import "./ArtGallery.css"
 import img1 from "../../assets/images/art/1.jpg"
 import img2 from "../../assets/images/art/2.jpg"
@@ -10,6 +10,10 @@ import img7 from "../../assets/images/art/7.jpg"
 import img8 from "../../assets/images/art/8.jpg"
 import img9 from "../../assets/images/art/9.jpg"
 import img10 from "../../assets/images/art/10.jpg"
+import img11 from "../../assets/images/art/11.jpg"
+import img14 from "../../assets/images/art/14.jpg"
+import img15 from "../../assets/images/art/15.jpg"
+import img16 from "../../assets/images/art/16.jpg"
 
 
 const images = [
@@ -23,8 +27,10 @@ const images = [
   { src: img8, alt: "Image 08" },
   { src: img9, alt: "Image 09" },
   { src: img10, alt: "Image 10" },
-//   { src: {img1}, alt: "Image 11" },
-//   { src: {img1}, alt: "Image 12" }
+  { src: img11, alt: "Image 11" },
+  { src: img14, alt: "Image 14" }，
+  { src: img15, alt: "Image 15" }，
+  { src: img16, alt: "Image 16" }，
 ]
 
 const ArtGallery = () => {
