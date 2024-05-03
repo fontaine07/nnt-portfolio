@@ -28,9 +28,9 @@ const images = [
   { src: img9, alt: "Image 09" },
   { src: img10, alt: "Image 10" },
   { src: img11, alt: "Image 11" },
-  { src: img14, alt: "Image 14" }，
-  { src: img15, alt: "Image 15" }，
-  { src: img16, alt: "Image 16" }，
+  { src: img14, alt: "Image 14" },
+  { src: img15, alt: "Image 15" },
+  { src: img16, alt: "Image 16" },
 ]
 
 const ArtGallery = () => {
